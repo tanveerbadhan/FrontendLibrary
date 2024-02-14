@@ -1,8 +1,12 @@
 {
   "name": "root",
   "private": true,
-  "dependencies": {},
   "author": "Tanveer Singh <tanveerbadhan@gmail.com>",
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.72.10"
+  },
   "devDependencies": {
     "@babel/core": "7.23.9",
     "@rollup/plugin-babel": "6.0.4",

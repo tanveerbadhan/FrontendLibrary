@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>B2B React Native Web Unification Components Library</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #app-root {
+            display: flex;
+            flex: 1 1 100%;
+            height: 100vh;
+        }
+
+        div {
+            outline: none;
+        }
+
+        html {
+            width: 100%;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+        #landscape {
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 999999;
+        }
+        @media (orientation: landscape) {
+            body{
+                overflow: hidden;
+                font-family: Lato;
+                color: #000;
+            }
+            #landscape {
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            .imgsWpr {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+            }
+            .arrow {
+                margin: 20px 20px 0 0;
+            }
+            .iphone1 {
+                position: relative;
+                z-index: 1;
+            }
+            .iphone2 {
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                transform: rotate(-90deg) translate(-50%, -25%);
+                opacity: 0.5;
+            }
+            .labelsWpr {
+                margin-left: 20px;
+                width: 30%;
+            }
+            .label {
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 24px;
+            }
+            .subLabel {
+                margin-top: 4px;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="landscape">
+        <div class="imgsWpr">
+            <div class="arrow">
+                <svg width="65" height="59" viewBox="0 0 65 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.980166 56.897C0.706669 57.3769 0.873921 57.9875 1.35373 58.261C1.83354 58.5345 2.44422 58.3673 2.71771 57.8875L0.980166 56.897ZM3.76067 54.0384L4.62944 54.5336L4.62944 54.5336L3.76067 54.0384ZM59.7349 6.12604L59.3796 5.19127L59.7349 6.12604ZM64.401 5.10919C64.6273 4.60541 64.4024 4.01354 63.8986 3.78723L55.689 0.0991665C55.1852 -0.127154 54.5933 0.0977786 54.367 0.601563C54.1407 1.10535 54.3656 1.69721 54.8694 1.92353L62.1669 5.2018L58.8886 12.4993C58.6623 13.003 58.8872 13.5949 59.391 13.8212C59.8948 14.0475 60.4866 13.8226 60.713 13.3188L64.401 5.10919ZM2.71771 57.8875L4.62944 54.5336L2.89189 53.5432L0.980166 56.897L2.71771 57.8875ZM60.0901 7.06082L63.8441 5.63418L63.1336 3.76464L59.3796 5.19127L60.0901 7.06082ZM4.62944 54.5336C17.0455 32.7514 36.6533 15.9677 60.0901 7.06082L59.3796 5.19127C35.5087 14.2631 15.5379 31.3576 2.89189 53.5432L4.62944 54.5336Z" fill="#305061"/>
+                </svg>
+                    
+            </div>
+            <div class="iphone1">
+                <svg width="103" height="209" viewBox="0 0 103 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.823242" y="0.000488281" width="100.602" height="208.471" rx="15.7562" fill="#A8B5BC"/>
+                    <rect x="2.21094" y="1.26953" width="97.8407" height="205.867" rx="14.4011" fill="#D2D2D9"/>
+                    <rect x="4.78809" y="4.09961" width="92.5333" height="200.312" rx="11.8769" fill="#E9E9EF"/>
+                    <rect x="37.6162" y="6.33496" width="27.1258" height="7.93125" rx="3.96563" fill="#A8B5BC"/>
+                    <rect x="0.137695" y="50.4736" width="0.685229" height="14.7037" rx="0.338645" fill="#A8B5BC"/>
+                    <rect x="0.137695" y="69.0015" width="0.685229" height="14.7037" rx="0.338645" fill="#A8B5BC"/>
+                    <rect y="36.6958" width="0.823062" height="7.39413" rx="0.338645" fill="#A8B5BC"/>
+                    <rect x="101.425" y="60.4082" width="0.834734" height="23.0538" rx="0.338645" fill="#A8B5BC"/>
+                </svg>
+            </div>
+            <div class="iphone2">
+                <svg width="103" height="209" viewBox="0 0 103 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.823242" y="0.000488281" width="100.602" height="208.471" rx="15.7562" fill="#A8B5BC"/>
+                    <rect x="2.21094" y="1.26953" width="97.8407" height="205.867" rx="14.4011" fill="#D2D2D9"/>
+                    <rect x="4.78809" y="4.09961" width="92.5333" height="200.312" rx="11.8769" fill="#E9E9EF"/>
+                    <rect x="37.6162" y="6.33496" width="27.1258" height="7.93125" rx="3.96563" fill="#A8B5BC"/>
+                    <rect x="0.137695" y="50.4736" width="0.685229" height="14.7037" rx="0.338645" fill="#A8B5BC"/>
+                    <rect x="0.137695" y="69.0015" width="0.685229" height="14.7037" rx="0.338645" fill="#A8B5BC"/>
+                    <rect y="36.6958" width="0.823062" height="7.39413" rx="0.338645" fill="#A8B5BC"/>
+                    <rect x="101.425" y="60.4082" width="0.834734" height="23.0538" rx="0.338645" fill="#A8B5BC"/>
+                </svg>
+            </div>
+        </div>
+        <div class="labelsWpr">
+            <p class="label">PLEASE ROTATE YOUR DEVICE</p>
+            <p class="subLabel">We do not support landscape mode yet. Please go back to portrait mode to view the website </p>
+        </div>
+    </div>
+    <div id="app-root"></div>
+</body>
+
+</html>

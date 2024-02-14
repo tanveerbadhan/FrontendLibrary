@@ -1,4 +1,4 @@
 node_modules/
 Archive.zip
 lerna-debug.log
-**/.DS_Store
+.DS_Store
