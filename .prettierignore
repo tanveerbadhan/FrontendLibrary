@@ -1,0 +1,6 @@
+dist
+android
+ios
+.bundle
+node_modules
+vendor

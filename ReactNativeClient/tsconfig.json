@@ -1,12 +1,12 @@
 {
-  "compilerOptions": {
-      "target": "ES5",
-      "jsx": "react",
-      "allowJs": true,
-      "sourceMap": true,
-      "isolatedModules": false,
-      "noImplicitAny": false,
-      "esModuleInterop": true,
-      "allowSyntheticDefaultImports": true
-  }
-} 
+    "compilerOptions": {
+        "target": "ES5",
+        "jsx": "react",
+        "allowJs": true,
+        "sourceMap": true,
+        "isolatedModules": false,
+        "noImplicitAny": false,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true
+    }
+}

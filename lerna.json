@@ -1,14 +1,14 @@
 {
-  "packages": [
-    "react-packages/atoms/*",
-    "react-packages/molecules/*",
-    "react-native-packages/atoms/*",
-    "react-native-packages/molecules/*"
-  ],
-  "version": "independent",
-  "command": {
-    "publish": {
-      "registry": "http://nexus3.mmt.com/repository/npm-hosted/"
+    "packages": [
+        "react-packages/atoms/*",
+        "react-packages/molecules/*",
+        "react-native-packages/atoms/*",
+        "react-native-packages/molecules/*"
+    ],
+    "version": "independent",
+    "command": {
+        "publish": {
+            "registry": "http://nexus3.mmt.com/repository/npm-hosted/"
+        }
     }
-  }
 }

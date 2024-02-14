@@ -6,8 +6,8 @@ const rootElement = document.getElementById('root');
 console.log('rootElement:', rootElement);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  rootElement
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    rootElement
 );
