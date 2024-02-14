@@ -1,5 +1,4 @@
 const path = require('path');
-
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -15,7 +14,7 @@ const compileNodeModules = [
 ].map((moduleName) => path.resolve(appDirectory, `node_modules/${moduleName}`));
 
 const babelLoaderConfiguration = {
-    test: /\.jsx$/,
+    test: /\.jsx?$/,
     // Add every directory that needs to be compiled by Babel during the build.
     include: [path.resolve(__dirname, 'web/index.web.js'), ...compileNodeModules],
     use: {
@@ -81,7 +80,17 @@ module.exports = {
             babelLoaderConfiguration,
             imageLoaderConfiguration,
             svgLoaderConfiguration,
-            tsLoaderConfiguration
+            tsLoaderConfiguration,
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env', '@babel/preset-react']
+                    }
+                }
+            }
         ]
     },
     plugins: [

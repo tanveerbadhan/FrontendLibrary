@@ -4,3 +4,5 @@ ios
 .bundle
 node_modules
 vendor
+.storybook
+stories
