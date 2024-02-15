@@ -1,0 +1,11 @@
+.textBtn{
+    display: inline-flex;
+    outline: 0;
+    border: 0;
+    font-family: 'Lato';
+    color: #008CFF;
+    font-size: 14px;
+    background: none;
+    cursor: pointer;
+    font-weight: 700;
+}

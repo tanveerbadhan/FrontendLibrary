@@ -68,8 +68,8 @@ async function build() {
                         let ROLLUP_INPUT_OPTIONS = {};
 
                         // Separating concerns for react and react native package
-                        if (name.includes('@React_UI_Lib/')) {
-                            fileName = name.replace('@React_UI_Lib/', '');
+                        if (name.includes('@React_Frontend_UI_Lib/')) {
+                            fileName = name.replace('@React_Frontend_UI_Lib/', '');
 
                             // Rollup configurations for react packages
                             ROLLUP_INPUT_OPTIONS = {
@@ -104,7 +104,7 @@ async function build() {
                                 ]
                             };
                         } else {
-                            fileName = name.replace('@Frontend_Lib/', '');
+                            fileName = name.replace('@RN_Frontend_UI_Lib/', '');
 
                             // Rollup configurations for react-native packages
                             ROLLUP_INPUT_OPTIONS = {

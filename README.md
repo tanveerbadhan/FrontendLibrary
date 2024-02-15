@@ -2,13 +2,13 @@
 
 1. Command to create package for react/react-native (by default, it creates folder in the `/packages`)
 
--   for react package: `lerna create @React_UI_Lib/{PackageName} --yes`
--   for react-native package: `lerna create @RN_UI_Lib/{PackageName} --yes`
+-   for react package: `lerna create @React_Frontend_UI_Lib/{PackageName} --yes`
+-   for react-native package: `lerna create @RN_Frontend_UI_Lib/{PackageName} --yes`
 
     -   If you want to create in other dir e.g. `/react-packages` (change `atoms`/`molecules` with respect to your need)
 
-        -   for react package: `lerna create @React_UI_Lib/{PackageName} react-packages/atoms --yes`
-        -   for react-native package: `lerna create @RN_UI_Lib/{PackageName} react-native-packages/atoms --yes`
+        -   for react package: `lerna create @React_Frontend_UI_Lib/{PackageName} react-packages/atoms --yes`
+        -   for react-native package: `lerna create @RN_Frontend_UI_Lib/{PackageName} react-native-packages/atoms --yes`
 
 2.  Remove `“repository”` field from `package.json` of your package.
 
