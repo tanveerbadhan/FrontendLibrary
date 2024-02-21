@@ -1,1 +1,0 @@
-import r from"react";const o=({onClick:o,children:e,variant:t})=>r.createElement("button",{onClick:o,style:{padding:"8px 16px",backgroundColor:"primary"===t?"blue":"gray",color:"white",border:"none",borderRadius:"4px",cursor:"pointer"}},e);export{o as default};

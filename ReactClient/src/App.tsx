@@ -1,11 +1,9 @@
+//@ts-nocheck
+
 import React from 'react';
 
 const App: React.FC = () => {
-    return (
-        <div>
-            <h1>Show your react packages here</h1>
-        </div>
-    );
+    return <div>Show your react packages here</div>;
 };
 
 export default App;

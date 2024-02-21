@@ -11,7 +11,7 @@
     "build-storybook": "storybook build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tanveer Singh <tanveer.singh@go-mmt.com>",
   "license": "ISC",
   "dependencies": {
     "react": "18.2.0",

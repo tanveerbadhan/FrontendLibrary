@@ -1,12 +1,1 @@
-import t from 'react';
-const e = ({}) =>
-    t.createElement(
-        'div',
-        {
-            style: {
-                height: 50,
-                width: 100
-            }
-        }
-    );
-export { e as default };
+import e from"react";import{View as t,Text as a}from"react-native";const r=({})=>e.createElement(t,null,e.createElement(a,null,"Test Package"));export{r as default};
